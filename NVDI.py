@@ -39,7 +39,8 @@ bounds_2 = [0.980,0.986,0.9861,0.9862,0.9866]
 n_e = colors.BoundaryNorm(bounds_2, c_e.N)
 
 # Plot the color bar
-ep.plot_bands(e,cmap=c_e,title="Land Cover classification with Emissivity",norm=n_e)
 ep.plot_bands(ndvi,cmap=c_ndvi,title="Land Cover classification with NDVI", norm=n_nvdi)
+ep.plot_bands(e,cmap=c_e,title="Land Cover classification with Emissivity",norm=n_e)
+
 # Show the figure
 plt.show()
